@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Login</title>
+        <link rel="stylesheet" href="newcss.css"
+    </h:head>
+    <style>
+        .input_text[type=text],input[type=password]
+        {
+           margin: 0;
+           padding: 0;
+           display: inline-block;
+           border: 1px solid #ccc;
+        }
+        .model_content
+        {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 50%;
+            text-align: center;
+        }
+        .background
+        {
+            background-color: #72e0a4;
+        }
+    </style>
+    <h:body>
+        <h:form>
+            Username <h:inputText value="#{tblAdmin.username}"/><br/>
+            Password <h:inputSecret value="#{tblAdmin.password}"/><br/><br/>
+            <h:commandButton value="Login" action="#{tblAdmin.login_admin()}"/>&nbsp;       
+        </h:form>
+    </h:body>
+</html>
+  

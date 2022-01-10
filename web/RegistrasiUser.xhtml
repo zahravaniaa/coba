@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>DAFTAR WEBINAR GRATIS</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            Nama Lengkap <h:inputText value="#{tblRegistrasi.namaLengkap}"/> <br/><br/>
+            Email <h:inputText value="#{tblRegistrasi.emailUser}"/> <br/><br/>
+            No Telp <h:inputText value="#{tblRegistrasi.noTelp}"/><br/><br/>
+            Jenis Kelamin: &nbsp; <h:inputText value="#{tblRegistrasi.jenisKelamin}"/><br/><br/>
+            <h:commandButton value="Registrasi" action="#{tblRegistrasi.save_registrasi()}"/>
+        </h:form>
+    </h:body>
+</html>
+

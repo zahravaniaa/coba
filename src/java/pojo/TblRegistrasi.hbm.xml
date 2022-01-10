@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 7, 2021 9:28:36 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TblRegistrasi" table="tbl_registrasi" catalog="ourmental2" optimistic-lock="version">
+        <id name="idUser" type="java.lang.Integer">
+            <column name="id_user" />
+            <generator class="identity" />
+        </id>
+        <property name="namaLengkap" type="string">
+            <column name="nama_lengkap" length="50" not-null="true" />
+        </property>
+        <property name="emailUser" type="string">
+            <column name="email_user" length="50" not-null="true" />
+        </property>
+        <property name="noTelp" type="string">
+            <column name="no_telp" length="50" not-null="true" />
+        </property>
+        <property name="jenisKelamin" type="string">
+            <column name="jenis_kelamin" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
